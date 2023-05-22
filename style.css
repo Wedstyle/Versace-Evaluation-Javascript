@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
+html {
+  font-family: "Oswald", sans-serif;
+}
+
+.content {
+  border: 15px solid rgb(223, 174, 12);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-one {
+  font-size: 2em;
+  width: 33vw;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(230, 225, 225);
+}
+
+.player-one > p,
+.player-one > h3,
+.player-two > p,
+.player-two > h3 {
+  text-align: center;
+  color: red;
+}
+
+.player-one-pseudo,
+.global-score-p1,
+.player-two-pseudo,
+.global-score-p2 {
+  line-height: 10px;
+}
+.player-two {
+  font-size: 2em;
+  width: 33vw;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(230, 225, 225);
+}
+
+.gameplay-element {
+  width: 32vw;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  background: rgb(167, 160, 160);
+}
+
+.dice1 {
+  display: block;
+  margin: auto;
+}
+
+.dice2,
+.dice3,
+.dice4,
+.dice5,
+.dice6 {
+  display: none;
+}
+
+.gameplay-element > p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roll-dice,
+.hold,
+.new-game {
+  display: block;
+  margin: auto;
+  background: rgb(148, 42, 42);
+}
+
+.global-score-p1,
+.global-score-p2 {
+  font-size: 1.5em;
+}
+
+.score-p1,
+.score-p2 {
+  margin: auto;
+  width: 65%;
+  text-align: center;
+  background: rgb(139, 25, 25);
+}
+
+.score-p1 > p,
+.score-p2 > p {
+  margin: 1px;
+}
+
+#actual-p2-score,
+#actual-p1-score {
+  color: white;
+}
+
+/* Mettre les marges correctement*/
+
+.player-one-pseudo,
+.global-score-p1,
+.player-two-pseudo,
+.global-score-p2 {
+  margin: auto;
+}

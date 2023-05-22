@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu du Dé</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="player-one">
+        <h3 class="player-one-pseudo">Joueur 1</h3>
+        <p class="global-score-p1">0</p>
+        <div class="score-p1">
+          <p>Actuel</p>
+          <p id="actual-p1-score">0</p>
+        </div>
+      </div>
+      <div class="gameplay-element">
+        <button type="button" class="new-game">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-plus-circle"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+            />
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+            />
+          </svg>
+          Nouvelle partie
+        </button>
+
+        <img src="./Image/dice1.png" alt="dé" class="dice1" />
+        <img src="./Image/dice2.png" alt="dé" class="dice2" />
+        <img src="./Image/dice3.png" alt="dé" class="dice3" />
+        <img src="./Image/dice4.png" alt="dé" class="dice4" />
+        <img src="./Image/dice5.png" alt="dé" class="dice5" />
+        <img src="./Image/dice6.png" alt="dé" class="dice6" />
+
+        <button class="roll-dice">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-clockwise"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"
+            />
+            <path
+              d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"
+            />
+          </svg>
+          Lancer le Dé
+        </button>
+        <button type="button" class="hold">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-check2-circle"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
+            />
+            <path
+              d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
+            />
+          </svg>
+          Envoyer
+        </button>
+      </div>
+      <div class="player-two">
+        <h3 class="player-two-pseudo">Joueur 2</h3>
+        <p class="global-score-p2">0</p>
+        <div class="score-p2">
+          <p class="actuel">Actuel</p>
+          <p id="actual-p2-score">0</p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
